@@ -193,7 +193,7 @@
   footer .container div:first-child {
     margin-top: 24px !important;
   }
-  footer img{
+  footer img {
     margin-top: 16px !important;
   }
   footer .container {
@@ -213,56 +213,41 @@
   footer ul li {
     text-align: center;
   }
-  footer div div:first-child{
-    text-align:center;
+  footer div div:first-child {
+    text-align: center;
     margin-bottom: 0px !important;
   }
-  footer div div:not(:first-child){
-    display:flex;
+  footer div div:not(:first-child) {
+    display: flex;
     flex-direction: column;
   }
   footer div div div:not(:first-child) {
-    display:block !important;
-    text-align:center;
-    margin-top:12px;
+    display: block !important;
+    text-align: center;
+    margin-top: 12px;
     margin-bottom: 24px;
   }
 }
 
 @media (max-width: 1400px) {
   .hireBackground {
-    height: 220vh !important;
+    height: 1286px !important;
   }
   .hire ul li {
-    width: 70% !important;
+    width: 40% !important;
   }
   .hire ul li img {
     width: 100% !important;
   }
 }
 
-@media (max-width: 1200px) {
-  .hireBackground {
-    height: 200vh !important;
-  }
-}
-
-@media (max-width: 1040px) {
-  .hireBackground {
-    height: 195vh !important;
-  }
-}
-
 @media (max-width: 992px) {
-  .hireBackground {
-    height: 155vh !important;
+  .hire ul li {
+    width: 49% !important;
   }
 }
 
 @media (max-width: 768px) {
-  .hireBackground {
-    height: 160vh !important;
-  }
   .notice {
     font-size: 20px !important;
   }
@@ -271,36 +256,24 @@
     text-wrap: nowrap !important;
   }
   .hire ul li {
-    width: 100% !important;
+    width: 60% !important;
   }
 }
 
 @media (max-width: 576px) {
-  .hireBackground {
-    height: 150vh !important;
+  .hire ul li {
+    width: 70% !important;
   }
 }
 
 @media (max-width: 500px) {
-  .hireBackground {
-    height: 140vh !important;
+  .hire ul li {
+    width: 80% !important;
   }
 }
 
 @media (max-width: 460px) {
-  .hireBackground {
-    height: 130vh !important;
-  }
-}
-
-@media (max-width: 410px) {
-  .hireBackground {
-    height: 120vh !important;
-  }
-}
-
-@media (max-width: 376px) {
-  .hireBackground {
-    height: 114vh !important;
+  .hire ul li {
+    width: 86% !important;
   }
 }
