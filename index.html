@@ -1,0 +1,1258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <script type="module" crossorigin src="/i_pay/assets/index-95c8d2a7.js"></script>
+    <link rel="stylesheet" href="/i_pay/assets/index-c857e83d.css">
+  </head>
+  <body>
+    <div class="container-lg py-md-8">
+  <nav class="navbar navbar-expand-lg ms--12 me--12">
+      <a href="index.html" class="navbar-brand">
+        <h1 class="m-0">i-pay</h1>
+        <a href="#" class="d-block me-auto"
+          ><img src="data:image/png;base64,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" alt="logo"  class="my-lg-7 my-6" width="105" height="29"
+        /></a>
+      </a>
+      <button
+        class="navbar-toggler me-12 p-8"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbar controler"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="material-icons p-8 ms-auto">menu </span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarContent">
+        <ul class="navbar-nav d-flex align-items-center mb-2 mb-lg-0 w-100 justify-content-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active hover p-lg-12 me-lg-12 navActive">條件找陪玩</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="hover p-lg-12 mx-lg-12">地圖找陪玩</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="hover p-lg-12 mx-lg-12">快速上手</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="hover p-lg-12 ms-lg-12">招募訊息</a>
+          </li>
+          <li class="nav-item d-block d-lg-none d-flex">
+            
+            <a href="#" class="hover p-lg-12 ms-lg-12"><span class="material-icons me-8">
+              shopping_cart
+              </span>購物車</a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            
+            <a href="#" class="hover p-lg-12 ms-lg-12"><span class="material-icons me-8">
+              person
+              </span>個人主頁</a>
+          </li>
+        </ul>
+      </div>
+      <div class="headerIcons d-none d-lg-block me-12">
+        <div class="d-flex me-12">
+          <a href="#">
+            <span class="material-icons hover p-8"> shopping_cart </span>
+          </a>
+          <a href="#">
+            <span class="material-icons ms-12 hover p-8"> person </span>
+          </a>
+        </div>
+      </div>
+  </nav>
+
+  <!-- <header class="d-flex justify-content-between align-items-center p-16">
+    <section class="d-flex align-items-center">
+      <h1 class="mb-0">i-pay</h1>
+      <a href="#" class="d-block ps-12"
+        ><img src="../assets/images/logo/Logo.png" alt="logo"
+      /></a>
+    </section>
+    <div class="headerLink d-none d-lg-block">
+      <ul class="list-unstyled d-flex my-auto">
+        <li class="my-auto">
+          <a href="#" class="hover p-12 me-12">條件找陪玩</a>
+        </li>
+        <li class=""><a href="#" class="hover p-12 mx-12">地圖找陪玩</a></li>
+        <li class=""><a href="#" class="hover p-12 mx-12">快速上手</a></li>
+        <li class=""><a href="#" class="hover p-12 ms-12">招募訊息</a></li>
+      </ul>
+    </div>
+    <div class="headerIcons d-none d-lg-block">
+      <div class="pe-12 d-flex">
+        <a href="#">
+          <span class="material-icons hover p-8"> shopping_cart </span>
+        </a>
+        <a href="#">
+          <span class="material-icons ms-12 hover p-8"> person </span>
+        </a>
+      </div>
+    </div>
+    <div class="headerMenu d-block d-lg-none border">
+      <span class="material-icons p-8 border pe-12"> menu </span>
+    </div>
+  </header> -->
+</div>
+    <div class="container-fluid"></div>
+    
+<!-- web -->
+<div
+  id="carouselWeb"
+  class="carousel slide carousel-fade d-none d-lg-block"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators mb-32">
+    <button
+      type="button"
+      data-bs-target="#carouselWeb"
+      data-bs-slide-to="0"
+      class="active border border-0 rounded-5 btn-carouselWeb"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselWeb"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+      class="border border-0 rounded-5 btn-carouselWeb ms-12 me-8"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselWeb"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+      class="border border-0 rounded-5 btn-carouselWeb ms-8 me-12"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselWeb"
+      data-bs-slide-to="3"
+      aria-label="Slide 4"
+      class="border border-0 rounded-5 btn-carouselWeb"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3500">
+      <img
+        src="/i_pay/assets/Banner01-79ca1cf7.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner1"
+      />
+      <div class="carousel-caption d-none d-md-block mb-240">
+        <h5 class="text-white fs-48">愛交友，自由配</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4500">
+      <img
+        src="/i_pay/assets/Banner02-1263cc5e.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner2"
+      />
+      <div class="carousel-caption d-none d-md-block mb-240">
+        <h5 class="text-white fs-48">專屬你的多元可能</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4500">
+      <img
+        src="/i_pay/assets/Banner03-7869a58a.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner3"
+      />
+      <div class="carousel-caption d-none d-md-block mb-220">
+        <h5 class="text-white fs-48">客製化行程？</h5>
+        <p class="text-white fs-48 mt-16">聊一聊，都可以</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4500">
+      <img
+        src="/i_pay/assets/Banner04-0b00f658.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner4"
+        style="background-position: center bottom"
+      />
+      <div class="carousel-caption d-none d-md-block mb-240">
+        <h5 class="text-white fs-48">實現你的接案自由</h5>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselWeb"
+    data-bs-slide="prev"
+  >
+    <span
+      class="material-icons text-gray1 rounded-5 bg-gray6 p-16"
+      aria-hidden="true"
+    >
+      chevron_left
+    </span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselWeb"
+    data-bs-slide="next"
+  >
+    <span
+      class="material-icons text-gray1 rounded-5 bg-gray6 p-16"
+      aria-hidden="true"
+    >
+      chevron_right
+    </span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- mobile -->
+<div
+  id="carouselMobile"
+  class="carousel slide carousel-fade d-block d-lg-none"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators mb-24">
+    <button
+      type="button"
+      data-bs-target="#carouselMobile"
+      data-bs-slide-to="0"
+      class="active btn-carouselMob me-4 border border-0 rounded-5"
+      aria-current="true"
+      aria-label="Slide 1"
+      
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselMobile"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+      class=" mx-4 btn-carouselMob border border-0 rounded-5"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselMobile"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+      class="btn-carouselMob mx-4 border border-0 rounded-5"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselMobile"
+      data-bs-slide-to="3"
+      aria-label="Slide 4"
+      class="btn-carouselMob ms-4 border border-0 rounded-5"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4500">
+      <img
+        src="/i_pay/assets/Banner01-a9709d1c.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner1"
+      />
+      <div class="carousel-caption mb-140">
+        <h5 class="text-white fs-24 fw-bold">愛交友，自由配</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4500">
+      <img
+        src="/i_pay/assets/Banner02-882ef77b.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner2"
+      />
+      <div class="carousel-caption mb-140">
+        <h5 class="text-white fs-24 fw-bold">專屬你的多元可能</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4500">
+      <img
+        src="/i_pay/assets/Banner03-007e5369.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner3"
+      />
+      <div class="carousel-caption mb-120">
+        <h5 class="text-white fs-24 fw-bold">客製化行程？</h5>
+        <p class="text-white fs-24 mt-8">聊一聊，都可以</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4500">
+      <img
+        src="/i_pay/assets/Banner04-a61720a1.png"
+        class="d-block w-100 fit-cover"
+        height="800"
+        alt="banner4"
+        style="background-position: center bottom"
+      />
+      <div class="carousel-caption mb-140">
+        <h5 class="text-white fs-2 fw-bold">實現你的接案自由</h5>
+      </div>
+    </div>
+  </div>
+</div>    <main class="mainBackground pt-120">
+  <section class="d-flex align-items-center flex-column ">
+    <h2 class="fs-48 fw-bold">開始約會</h2>
+    <div class="mt-24 text-gray2 position-relative">
+      <a href="#" class="d-flex align-items-center"
+        >看更多<span class="material-icons text-gray2"> arrow_right </span></a
+      >
+      <div class="datingStart d-none d-lg-block"></div>
+    </div>
+  </section>
+</main>
+<div class="container mt-md-n72">
+  <ul
+    class="mainContent list-unstyled d-flex gap-24 flex-wrap justify-content-between d-none d-xxl-block"
+  >
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/01-ef52d53a.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">櫻木花錢</span>
+              <span
+                class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> male </span>
+                <span class="ms-4">62</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/02-6e6764d4.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">香奈鵝</span>
+              <span
+                class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> female </span>
+                <span class="ms-4">24</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/03-ce43e8b4.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">體大學生</span>
+              <span
+                class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> male </span>
+                <span class="ms-4">20</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/04-b7c07c46.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">工頭</span>
+              <span
+                class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> female </span>
+                <span class="ms-4">28</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/05-ed11b834.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">kTV王子</span>
+              <span
+                class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> male </span>
+                <span class="ms-4">20</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/06-88870bf2.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">小可</span>
+              <span
+                class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> female </span>
+                <span class="ms-4">33</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/07-3727d294.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">純痴茶</span>
+              <span
+                class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> female </span>
+                <span class="ms-4">20</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+    <li class="d-none d-lg-block favorite">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center mt-24"
+      >
+        <img
+          src="data:image/png;base64,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"
+          alt="favText"
+          width="196"
+          height="38"
+        />
+        <img
+          src="/i_pay/assets/mainFavorite-a55ae3da.png"
+          alt="fav"
+          width="196"
+          height="161"
+          class="mt-28"
+        />
+        <div class="mt-40 text-gray2 position-relative">
+          <a href="#" class="d-flex align-items-center"
+            >找其他<span class="material-icons text-gray2">
+              arrow_right
+            </span></a
+          >
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card rounded-5 border-0 shadow">
+        <div class="position-relative">
+          <img src="/i_pay/assets/08-d118ae47.png" alt="01" class="img" />
+          <a href="#" class="position-absolute">
+            <span class="material-icons p-8 bg-secondaryLight rounded-5 icons">
+              favorite_border
+            </span>
+          </a>
+          <div
+            class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-48"
+          >
+            <div class="left d-flex align-items-center">
+              <span class="productName text-gray6 fs-24">麥香雞</span>
+              <span
+                class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+              >
+                <span class="material-icons"> male </span>
+                <span class="ms-4">33</span>
+              </span>
+            </div>
+            <div class="right border rounded-5 bg-secondaryLight">
+              <a href="#">
+                <span class="material-icons p-8 icons"> chat </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body ps-24 pe-24 rounded-5">
+          <p class="fw-md fs-24">NT$ 800 / HR</p>
+          <section class="serviceContent mt-16">
+            <h6 class="fs-20">服務項目</h6>
+            <small class="text-gray2 mt-8"
+              >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+            >
+          </section>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<main class="mainBackgroundMob d-lg-none mt-md-72">
+  <section class="d-flex align-items-center flex-column pt-64">
+    <h2 class="fs-md-48 fw-bold fs-24">開始約會</h2>
+  </section>
+</main>
+
+<div class="container mt-n480">
+  <div class="overflowX">
+    <ul
+      class="list-unstyled d-flex gap-24 d-block d-lg-none w-100 mob-overflow mb-0 "
+    >
+      <li class="order-3">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/01-ef52d53a.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">櫻木花錢</span>
+                <span
+                  class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> male </span>
+                  <span class="ms-4">62</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+      <li class="order-2">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/02-6e6764d4.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">香奈鵝</span>
+                <span
+                  class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> female </span>
+                  <span class="ms-4">24</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+      <li class="order-first">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/03-ce43e8b4.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">體大學生</span>
+                <span
+                  class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> male </span>
+                  <span class="ms-4">20</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+      <li class="order-4">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/04-b7c07c46.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">工頭</span>
+                <span
+                  class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> female </span>
+                  <span class="ms-4">28</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+      <li class="order-5">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/05-ed11b834.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">kTV王子</span>
+                <span
+                  class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> male </span>
+                  <span class="ms-4">20</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+      <li class="order-6">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/06-88870bf2.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">小可</span>
+                <span
+                  class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> female </span>
+                  <span class="ms-4">33</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+      <li class="order-7">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/07-3727d294.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">純痴茶</span>
+                <span
+                  class="gender d-flex align-items-center bg-main rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> female </span>
+                  <span class="ms-4">20</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+      <li class="d-none d-lg-block order-9">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center mt-24"
+        >
+          <img
+            src="data:image/png;base64,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"
+            alt="favText"
+            width="196"
+            height="38"
+          />
+          <img
+            src="/i_pay/assets/mainFavorite-a55ae3da.png"
+            alt="fav"
+            width="196"
+            height="161"
+            class="mt-28"
+          />
+          <div class="mt-40 text-gray2 position-relative">
+            <a href="#" class="d-flex align-items-center"
+              >找其他<span class="material-icons text-gray2">
+                arrow_right
+              </span></a
+            >
+            <div class="datingStart d-none d-lg-block"></div>
+          </div>
+        </div>
+      </li>
+      <li class="order-8">
+        <div class="card rounded-5 border-0 shadow">
+          <div class="position-relative">
+            <img
+              src="/i_pay/assets/08-d118ae47.png"
+              alt="01"
+              class="img"
+            />
+            <a href="#" class="position-absolute">
+              <span
+                class="material-icons p-8 bg-secondaryLight rounded-5 icons"
+              >
+                favorite_border
+              </span>
+            </a>
+            <div
+              class="d-flex d-flex justify-content-between productIntro position-absolute w-100 pe-24"
+            >
+              <div class="left d-flex align-items-center">
+                <span class="productName text-gray6 fs-24">麥香雞</span>
+                <span
+                  class="gender d-flex align-items-center bg-blueLight rounded-5 text-gray6 ms-16 py-5 px-8"
+                >
+                  <span class="material-icons"> male </span>
+                  <span class="ms-4">33</span>
+                </span>
+              </div>
+              <div class="right border rounded-5 bg-secondaryLight">
+                <a href="#">
+                  <span class="material-icons p-8 icons"> chat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ps-24 pe-24 rounded-5">
+            <p class="fw-md fs-24">NT$ 800 / HR</p>
+            <section class="serviceContent mt-16">
+              <h6 class="fs-20">服務項目</h6>
+              <small class="text-gray2 mt-8"
+                >鐘點約會 / 旅遊陪同 / 朋友聚會 / 商業應酬</small
+              >
+            </section>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="mt-24 text-gray2 position-relative d-flex justify-content-end d-lg-none">
+    <a href="#" class="d-flex align-items-center"
+      >看更多<span class="material-icons text-gray2"> arrow_right </span></a
+    >
+  </div>
+</div>
+    <div class="comment container pt-48 mt-64 mt-lg-600">
+  <h2 class="secondaryDark text-center d-none d-lg-block fs-48">
+    服務好評
+    <div class="d-flex justify-content-center">
+      <div
+        class="border border-bottom border-4 mt-16 border-secondaryDark w-96"
+      ></div>
+    </div>
+  </h2>
+  <h2 class="secondaryDark text-center d-block d-lg-none fs-24">服務好評</h2>
+  <div class="d-flex align-items-stretch position-relative">
+    <span class="material-icons commentLeft d-none d-xxl-block">
+      chevron_left
+    </span>
+    <span class="material-icons commentRight d-none d-xxl-block">
+      chevron_right
+    </span>
+    <ul class="d-flex mt-48 gap-24 justify-content-center p-0 overflowX">
+      <li class="card py-24 px-16 h-100 w-100">
+        <div class="card-title mb-0">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAeCAYAAABaKIzgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS+SURBVHgBpVhJbhsxEKyW5mIH/koAA4kRB1mUlwn5mDWODj744McIRk5ih+yN5EgaB2MCgWfhNIvV1dVUCGfG4eVls1rhAcyUB+dB/s7vaUXj9cfbX1gwJD7xbhoT9UFeAI9t/OFcoDV4C0bGyegC+MjP6Xj8jYWDSvwcBW3sHLO5zjhXv/tvJuPw8rxZMe1IPhVG9VNhd1Xgl/vH69tPi9j8m+OnHL9/yh2UvOQ4jX/C6JqxFYgouyVhVWIIu0mipYTFbLLETw6peZMaoHQSvwN6eH7acEqbJqz/IV+GQI83n+9GLBiH5+cNEv8kY5Al3yXNcl2eFXYer24/j7NA8wfbTiv6vYOE7BVpMZtrHLes8QQgjFJ2QvKzI/hs/AB6eHraUGZTKrDCJNuA6DX/G6/uvo5YMA5Pe80WNel2adqKee3x5u5+xBzQjG+rG9Wdgbt4VCZwWl7pa1pvNbniJST7JvureCnTeTE++W5XyJXoqSbHh9CnVOKXb8t8U+Jjd8ZkQl75zXh9fzm+MLoGsnaS6jrko4o0s8t84h3ahPhmcQ019waxXDOOZyq9A3rY70Q7QqPkheVD8c+k1/lmvPr6Y8SCcdjvw0lUjme73Xhz/32cizPkSe6bjQ3BO5KWenpHpZNUeiSKtHmUsJG6/4lPr38eVCFE7DvuJgBtXU2+pmiDH77/onNTXvc7DstrKx4O9lS47l/tO636os+kbmt71qBan5Z9smr1NYsLJMJZeM1IqYKUOvDlyyaTuIli8MJAXQJxAOIh2pmbRL6vGuIw/GDam5U0qXyXLKGXRm0gHIvIkqbVZAXmh5SWCCGm7IdpyAv1UYu7SU93eptjGDWWJQ4YD/hNoFJEenSoyCUQG9NtB4QpWnWcSuqNUd0dgn59TuikkqJihRDWVtAf106AeoYssgMtXxS5NYeRSkqSbgA7BJVng0tC9Fa3Ki81G0xuKT7PgwW7oBlGoacuISK0bxqgpnjLFHDgkAxqsZY5knpGMFLpqxO981UZtJvSyfOMohZe2JNSxvXgo3d+rggMlv5BzoHsAGthKJ09y2YIFIcep2JuZKB6oiXTPzdaNKWrdr25eI49vMwflB23pFNUMYhOfi7Ud7g4lDY+nc8WE1mPXDcuMqkY2bSTGfW24VPDnLWkQ5tadLqEOkDd0WWF1oW9OVAcPwmqWY5HNS4iDYqn+ChPFmOz2qg+Mk2ExcmlOsRbdg+1v9qeKWjyU5N7R6OkgMR+LcVk/sZuvFS6CbtYNHFe9eGjRE4CaJZTbjqTFhKhZkahN3mMjXmRWcbFR3nafQxNt17dSG1YtVtdZJYcnDsS0P2ODzepKypz7iwmmSHso1a88W7F5b04SXnWiuUoT8wpQHwXXRXQ5FzqNe5BQpe2TzGoQRPgTCbNKQeNcI/zc8CELpNCmkFqR8iy4STejMok+3pRQuRlzEGWMDUgqjICT73TYLdgyreJpKDIVHYZqPZr+d+P9sSlRm6JYwdvVdtjUEZrUlQCoE6f7Dbl0pf+bBtvgl0EmlyDNXNyjHB95/crlYG2p5CBOa3SKy3Uq76aus1ruoQQAtQm1vx8PJHElFGWueRxiShqXiAfkzZ6dGzaUUAl8g/naq1/VaRhWAAAAABJRU5ErkJggg==" alt="pink" />
+        </div>
+        <p class="card-text mt-24 text-gray1">
+          謝謝「愛配」，陪玩師新竹風城女子，給我很多戀愛上的建議，成為我的戀愛顧問，在陪玩師的協助下，我用了她建議的方法攻陷了我現任女友的心，至於秘訣是什麼，全網唯一推薦「新竹風城女子」，快去下單問她吧！
+        </p>
+        <hr class="m-0" />
+        <p class="mt-24 mb-0 text-gray1">網友 / 麵線</p>
+      </li>
+      <li class="card py-24 px-16 h-100 w-100">
+        <div class="card-title mb-0">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAeCAYAAABaKIzgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATjSURBVHgBnVjBrhtVDLXD/EIXSCChCiFAogIJJFgRvizix0i6AqmLLrp4i0h0waILfuGN3Wsf2/dOMhlVM699k2TuPdc+to+dx7RyXa//Hw9MfxEpt0vbxfkM79uN6PLy6xd/0I7rfcMX1vMScziDWNvt9Yg/rUPpqRlDZpHtIrsXaH5++JN2Xs8Nv5lSxhUmrLQ3fIt/Z+j16cNRRY+wE9QRXjMfmufiTy7ffPviQjuu6/XDUUSO8N/wmUSF/X37cS6V7vDvDJ2JT22nbWI4p+6mg8xgoH2ym835mU7kaIGrQsDUuK/jLwx9egdv830POMFAtn/0+rvvP7/QjuvJoqX0ezJp0fcwI952jLGzir8wdLbcke5dT/IyuUVG9rM5W25a/gVu++/mRY4aD/MD/Kq0d2//O+qBz2acG6b9WQEzXV69+mJXpb9t+J8B394q4lNW5svLDw/wi9GZqLHpVe756YU9RMR+iehuNhvACYWtESVOYzNczBv4nN62/efaTGGvFxFeNiYuP/705W42gb9mgHHier2J74xqyx04Nopu/kKYnud5N5uGDzW6byB5pug2Pr958/7YbudQXtPJeIk8N/kwb3/+5atdbBp+Y+2cqQRRGo3VT8KfdG66ycFnaqfv10jz1iPm/bnZIE+SxeLAjFqHNqG0PgGf//n739QiDYHnxQIqESa+240+YC9//e0lrx1g+Fi08rj2Fz391YBt1ySi5Tqe9xU6YjZH5HY4ER1Sef1KfF2gOUCTZHXd11s5rCO48npS6a3L4iDoGqmb5VULF+virDikOssjQwXuc2ZULoYBIrjnaFFZ7DZInKk8SZ7eVa01JwwJ2BHJL+go1Qx8LWeH1keGau90PDSTIMaBGrQUo/n5qLWGXqGvLpYHEJiwAYU7HQxgn6o40L0oHjKKtYqxMRkj6ux2opyUtlbmIMKZQIQnTxB1s5ZFBHkCmFZ47OAImfCgtrplaAOPNZqrk2LqswSD3ch7UirVsfMny6E+wHIONvmZpowEarsdLFQ86E0au27onIwil8dc5aShmM28L6Y5bZpEMgpkEyxyMhNvVBVbiMDnJ5ocbVa9+jAcyuf4tV4iHWnoVjlQxwkxZ7QcnUV6hwhHQsewIVKVu+tpJaZTfqCRuU5wbOYxRy1qVWSxBx5Fkyd8d8qqVxmSO/sTUXecXZko1IF1of2h5Y9TlJBzXfK0IHy2jUYTQ5TceqycPW1y9VpUe3jKGMdck0YF1U4uj1n60NAICUnUQY5LeRQKdAFexZUUeDFV0UQkfGLIFtWczCSPr12QLEzpo6Y+ZpTCQIQARvnmqtwQYtCNnyyqNGwKj0sS4h6LxwhbwQM8uwO+1vJa++sBgDfVYYKplJ3qeFnuOXO4/KUTrYBd8LtodxB4G7Hx1S5JTP0YDso2615CSbJqcI6W7HgTIurDkJY+a0xwvsMFXzTBJOWSogKz3IOe4gnhTInS7c4U3U3LaEp2qeS5PgyuBsyUJ7SpnGq9dPwEGNQFWrkPvvBWIvRbOgp5ctlgvhnMcdxSmuJZhDHMbGtcnvAXitgmPYGRMyXEmnkmcLzmka3KT53GfimVYM2vIJR/gQGmGywpKJz1gmIaOkPqTh3fO+mCuC7UXURWGTXunU3lQVhoaEAsz1LRqsZAwzfVdn0EqBk2Cj8118AAAAAASUVORK5CYII=" alt="purple" />
+        </div>
+        <p class="card-text mt-24 text-gray1">
+          謝謝「愛配」，如果沒有從愛配上找到陪玩師，今年的過年我就要單身回家面對親友的轟炸了，謝謝黃藥師陪我回家過年。爸媽現在一直問我什麼時候要跟你結婚，你怎麼可以表現這麼好俘獲我爸媽的心啦。
+        </p>
+        <hr class="m-0 mt-auto" />
+        <p class="mt-24 mb-0 text-gray1">網友 / 珍妮佛羅賠滋</p>
+      </li>
+      <li class="card py-24 px-16 h-100 w-100">
+        <div class="card-title mb-0">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAeCAYAAABaKIzgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQySURBVHgBpVc7jhQxEK0a9b0YkJBWSAQcgYSAABEQkKARIiAgICAk4AgEGxAgMbP32nZh19+e7t7VTAfbn7FflZ9fvfIiLFx0/LWHHf0DAgREAiL0H7F+bd8BT7h//RQuuBgf6RiYFoPSO95l/GkZ6v4APK9OJMQUgjPl7wCf4eJrPjCYExA5ShgO3uHjCEHHn3sodbWoQJKnPRvcHT57cyGbii9vC2lQY/Q04p8zOvNqdVXOngCQItIVbDI+bY8p5/hdovT3R13tvOeXnmvbohbhDp+/PcEFF+NTeZKYZG0JPH9rdC7i94wSVG0We4azQmqI5Qo2CSv+nAt0lN4qvg+kP9/39fWYdDgIh3Vwwpv3l2mT8XdHF4/4RyITRJs37xbxp5TKoYlDK3AoQ7BCuqLSyXZL2UQ2PzY7i7GhfSnp22/VN/EIzpymnsbUvyd88eEyNgM/kNGgSd4ewDdGD7WI2vhs7D1swSvZpLC4difbc4u5jY90+7VWIhw5M+86KcG24F3VzsuPF7LZ8BubSZCcrMqrfX4E/lQTObhXSms074zV3++uqHTVZpBHiq/WVK9H4CP9/iJZWrX3dgR9WY6zw77w1SdczNPwH5j/0G+TrzaKptuluI8Hhx1BKQgI21dRX+4FBVz1PB+p63opVY9Z75MDGVgh1SqKBooXGPYHh3tZgsll7aIZvLpFUYrTEmiLneXOWCUOKZxkkbE1xuSdiOcSK70mq4cRbW9teMmNXxeBRnBZ316eUowx6qhtsRm7WHYyHt3L5aXeJrWlthPKopl+MYozdrZojHkblDZ8hLzALCk807+Rkh2oPjdGyZMYJ3AgkJ680wSNGUk6rXyN0ZLZAdeXuUBJtdFizoprycrXtvVzHI4xdSYDJ1A52K+2HcOythIF3S10W5KYyAUhi7ZdcplB3sGWKGvFM4+42tpMWu61JsxUHFuX669Y4el4MiukKF77nnUs36d6kI1kvP+mo17mjEyzCKv+N140n0srLE9wjD8jgtzSfO5Q9V0IHAbrVmTLUhlskVpK4NhWFs2ShqhnRSkV3+JoMeFK9bFN9VZEuo2SXVTx2hUHcasAK76Ia9tu1iTjs/Jxku7gYk9asQ1RjZn18jcrBHveqHq2P4WL3dBYEF2KKDEIaawMSlVPydcoNOSro/6Y61LAhS3rGE3M+f9HFDFVk4jRAHiBENolYRRGc/W/8RR+aoUA7ndb5gTaz22SxdEdQvSuZombNXU6YEbL0FmyPUBiObHbDYYEDkuMxoK9NQMkYtKOWHHqgqQ7qj1FVUISe5qnvmU2kk0/d5XVRGfb5mTmmBqHNQEMUhCioaB4+CQHBopVk07WYgdKwGbwhToeNquex9rhI4oj1QN21sVzLHi4gR5KIPduONOeM91d2BXWJqM8O2wdbeH6Ugbtg99dlv8BSbHljcFSREwAAAAASUVORK5CYII=" alt="orange" />
+        </div>
+        <p class="card-text mt-24 text-gray1">
+          謝謝大肌會陪玩師，我原本是想在健身房找教練的，但你的收費比健身房教練還便宜，身材又很好，所以我就下單一堂試個水溫，沒想到你真的教得很好，後來又多追加了幾堂，現在我人魚線都回來了。
+        </p>
+        <hr class="m-0 mt-auto" />
+        <p class="mt-24 mb-0 text-gray1">網友 / 水煮餐女孩</p>
+      </li>
+    </ul>
+  </div>
+  <div class="mt-24 text-gray2 d-flex justify-content-end d-none d-lg-block mb-120">
+    <a href="#" class="d-flex align-items-center justify-content-end"
+      >看更多<span class="material-icons text-gray2"> arrow_right </span></a
+    >
+  </div>
+</div>
+    
+    <div class="hireBackground">
+  <div class="hire container ">
+    <h2 class="secondaryDark text-center d-none d-lg-block fs-48 pt-120">
+      陪玩師招募
+      <span class="d-flex justify-content-center">
+        <span
+          class="border border-bottom border-4 mt-16 border-secondaryDark w-96"
+        >
+        </span
+      ></span>
+    </h2>
+    <h2 class="secondaryDark text-center d-block d-lg-none fs-24 pt-64">
+      陪玩師招募
+    </h2>
+    <ul class="d-flex mt-48 list-unstyled gap-24 ">
+      <li class="shadow">
+        <div class="card pt-55 px-40">
+          <div class="card-img mb-0 position-relative">
+            <img src="/i_pay/assets/hire01-4c4d085e.png" alt="hire01" />
+            <span class="position-absolute translate-middle top-0 start-50 border rounded-5 bg-gray4 border-gray4 fs-24 py-4 px-24 notice hireIcons">資格</span>
+            <span class="position-absolute translate-middle top-50 start-50 fs-40 text-gray6 slogon">無經驗可</span>
+          </div>
+          <div class="card-body mt-20 mb-32">
+            <p class="fs-24 text-gray2 text-center p-0 m-0">新手小白都接受</p>
+          </div>
+        </div>
+      </li>
+      <li class="shadow">
+        <div class="card pt-55 px-40">
+          <div class="card-img mb-0 position-relative">
+            <img src="/i_pay/assets/hire02-5c665452.png" alt="hire02" />
+            <span class="position-absolute translate-middle top-0 start-50 border rounded-5 bg-gray4 border-gray4 fs-24 py-4 px-24 notice hireIcons">抽成</span>
+            <span class="position-absolute translate-middle top-50 start-50 fs-40 text-gray6 slogon">筆筆90%</span>
+          </div>
+          <div class="card-body mt-20 mb-32">
+            <p class="fs-24 text-gray2 text-center p-0 m-0">業界最高回饋</p>
+          </div>
+        </div>
+      </li>
+      <li class="shadow">
+        <div class="card pt-55 px-40">
+          <div class="card-img mb-0 position-relative">
+            <img src="/i_pay/assets/hire03-2f713903.png" alt="hire03" />
+            <span class="position-absolute translate-middle top-0 start-50 border rounded-5 bg-gray4 border-gray4 fs-24 py-4 px-24 notice hireIcons">優勢</span>
+            <span class="position-absolute translate-middle top-50 start-50 fs-40 text-gray6 text-nowrap slogon">彈性接案無負擔</span>
+          </div>
+          <div class="card-body mt-20 mb-32">
+            <p class="fs-24 text-gray2 text-center p-0 m-0">分享興趣與互動</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+    <div class="playComment container-md d-flex justify-content-center mb-120">
+  <div class="card border-0 shadow position-relative mt-n100 d-flex justify-content-center w-80">
+    <span>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAYAAABxlTA0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ4SURBVHgB7dxBbtpAFMbx94Yq6x7BNyhRSNfJCVo2CK9Ib9CeoOkN2hMkWblOK6U9QVk3SNATNEfgAplXD5Q2UcjY2PNtou+3MdhokP6gAYsxKluU5ex1tZmIaV/EMqFHqcjSVKbq9fsoPzjfcvy/y8ufffO9K0ZtS2/U3Q5Ho5eLzR63ufG1nE/MuznjdmFZaFhWLTd7Vu/gophnTm9/CyXjzY7z/HC6egc79T+EknLqzsJWVx9oJldC6akMnZq+EoIwsxNnYn0hCBV9EeZgBsbJnBAUA4MxMBgDgzEwGAODMTAYA4MxMBgDgzEwGAODMTAYA4MxMBgDgzEwGAODMTAYA4MxMNgzAVGRaey4iTyXml+0w8rFarOIj6NZg/V0i79jRcaRIwGABR6NB8ex41+K6yOvWrNkS7+NxgdvYo8oi9l59Upkscd4s3dhnVh0nM8zEwBOEWAMDMbAYAwMxsBgDAzGwGCK+v6nptHvryY+E9X30THCyYrphcSfaFJ3klAd/+RM4ycsamcCAAtMa5wiwBgYjIHBGBiMgcEYGIyBwRgYjIHBGBiMgcEYGIyBwRgYjIHBGBiMgcEYGIyBwRgYjIHBGBhrycBAKrJgYCAv8ouBgcx6HxkYxJt9yPP9GwYG8CYXeX54Gm4zcGJhoWGeD0429xk4kbASNPzr9Xg8eHt3f5LLuMKrZjXLQ58q52y5t9ebDof7W6/D6xx4PZmv5xt6qNMUwbj1Wgdm3GZaBWbc5nYOzLi72Skw4+6ucWDGbadRYMZtrzYw43YTDcy43T0amHHT2BqYcdN5EJhx07oXmHHT+xeYcTFWgRkXqCiuT4Vg/gCz49t+0RvuSwAAAABJRU5ErkJggg==" alt="vector" class="position-absolute translate-middle">
+    </span>
+    <div class="card-body d-flex pt-72 px-110 gap-24 mb-0 ">
+      <section class="w-100 text-center">
+        <h6 class="fs-20 text-gray1">飛天小女警</h6>
+        <p class="mt-16 text-gray2">
+          註冊的速度非常快，完成之後就有訂單進來，款項入帳的時間也非常快，非常感謝愛配讓我成為陪玩師。
+        </p>
+      </section>
+      <section class="w-100 text-center">
+        <h6 class="fs-20 text-gray1">工具人</h6>
+        <p class="mt-16 text-gray2">
+          身為一名健談的工具人，跟我聊天絕無冷場，上得了廳堂入得了廚房，問我股票也不會讓你住套房。
+        </p>
+      </section>
+    </div>
+    <div class="mt-56 mb-72 text-center button">
+      <button type="button" class="btn btn-main text-white py-24 px-120 text-nowrap">成為陪玩師</button>
+    </div>
+  </div>
+</div>
+    <footer class="border border-top border-1 border-gray6">
+  <div class="container">
+    <div class="mt-48 mb-15">
+      <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAAAdCAYAAACpMULtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAvnSURBVHgB7VpvUhtHFn/dIznrLQHSCTw5AfIJIk4A3gsgsptsNvmAKIcEOwiNgNje2FnEh6S8W1uLfIEYX2ARJ7ByAssnkJCUMmamu/N7PTNCwkIWikNSdl6VPENP9+ue9/f33lgQqPupl9VCLZOhw+nvt6r0B/2uSPA/7U+Lz4iMawcE1Y0RuDc1dSWxlKl4LfqDflNKND/xXKLAjQeMoSz+5dsF+dI/xLVC7yi98DxXJSmtdeCy4TokZw1pVxixnypt7tIlUSLz0GscfbZeF1Y5gySEfKu8qFveWFTaeEKIaMQMTuA/8QxPXTbXgLQg32AIasHFhPPxj2gM5e8hbZB+jJmYypvE/F/dDyMNQc6KIVXCn+lw77PHMbvT3vZ+gsJzlTHyeGACwt7Md29XflLGZKQx1zhc2LdmTQg6kkQtHcmP743WNZKiJci0MOG5lsYaq9Q6LaTeT3lb9WH8DQVpCYZa60jccgY3aej4Oba8xnthUmT4Jq1l4AotFsK1ZHVrb9mK7K1gx9nv6a792foBHuSiBbv6SsJ7m/NRt1jc08Y8md7e3o/H2sVinkiX4DdLU9vbtYH56+tPIeQs5Hijf80o6qyvl+Ad3tTWtugUi6yCpemt1xt+E2E2odRTmNAMziFl/ECpxBI0ty8kzc18v1142wGDMSaL+LXHeScegyU3YNnIP2YPgkrH4+3bxTzGZmG9tXEVxKQ1iV6E09pIuNQ46zKe18ABAeCMdSJB7xC9WAMQkMG8ghzw4rNQ1QKuCF3iCQuRpGQpLkOyaTZYLKlrjovGLCIAuXhWRSx67sDYHZ14cvUehDmEOrfXS+DB89nzslJgnaFFsDoEswaHPP+9ZBnKONcROre+OsD63PTdr0WCfkMysNauo5cRXtJOUuxevTX8pd8EsYJ84T8VmtJy8BSz4Q/i06eGDhSHXCFYiWH20nY4z66h7XO/0llbn5u6NxgW27fWFwjgREfrWOtgmw+9weR0mA9JHp/wUOHcAxvr2fZAVkns8oFj9sDQTW2U36cLUmerdAB+Lgm9klSJOvOCu+aAkyrgtzJsTfdrL/uTAhKCgoBi0v6J4X0Xzs5rb3KeECVGOjMbW7Yc4FCUcMxjvITra3l9lEXGFBAnaeIQVk+I5I14XKmTtBbGTcorFgz4+mU2Id8bBAZ9QUpJzA9EAedZhLKvvbqRTiOuMcq4AfyQw5zlpNDv45zPoLRdqeFV0jzFzBkaReZ0XxlubEosVPxVowmJYas0zgeB1HwADhctvEjhxd3TmB8TG4VR+gAotRFocd0exBHNYXOhxFzIWww+w3mNhcpjUoAlMGn86hymlArmg+DYVQKGAWR7DGUdH1MLhvqDr04OiI6J5/FPB/6s0icHrNDUnTt1cGnQqOyCfYRvWlJRE/fNq/fuNSx+R5hL3cd6djN9/nKOMGyAcU6KPB8KsrwRmyciY5Mszp0nIW9MFcvXIcRHVjbBoCBtgSj1AbysFSQEwAqxMpcgvLwfDKnVJOcO8JayFo8lkyFP8GiM40UhBXB0Y2DJ1Pl8PWeMhleKecm5CGMJo9MWLBmxCUG4JydhEc8CU0YLrQzL/uDF2prLCmcYryMhvnLmMKYxW8hahOeD3uBlIbDmxyrUUufm7f+3b94ynfCn7X3nZRP7uVBmg+dIa9WhRbami97+WYFyWKIRZFFQVAjjHCtTRa8WPbKHE4p6QuQX9uG1vB+ATzmDHMRCFpGXwPIa/bzt3iHvgbNppcL9AKFpTOLCHLI54nYXGCxDSCYIzC4jsFioTFMP7ni4IFRJvlLn6Pgxe5pSZo615L+kA6F1A3VuS/n0ar0E4RsdAjLwncXfz+1Z+/OdDr2jWVhjb5mLvJJ5HWJhDWG5Bs/b10rYsJwIHCjIWMM47N+LBfoTLB7sbtAIcpwgBzOHxYvq1LpX7T2Q4gMwbaU8r/ci3TCP5IiFvjF6rs2TivdnbxIDxiNtjuIbOTYc5jCDS+YFBOMDpbEwMpV7jU5hjTUkRGB2uoXbQHMaxhImhHbhFocdnI3qPPeo8EUZKX+HUdvMv+5khm5kHQSxIYwgWcwNDckqSWTbhbU8hc5LfeP7U5W758o5IYzKsidCEgMv3OXkr+nR1FdenUaQ0DJn7SYQvV6WFbDROVZcPNbZ2ihx9W1f/4xBWG8RYmAfZQ3EJvqBMMxAgj2RQ13q1GvHJkUyjZ5ADRGLQy1HrkfoQjCSgxwUoopohegNOQXGhDM/8kVg322m8k3lqHDLtnRopEw4m7AyTQu9h0r0jshjej5EjPxchAUQK0nQyJCdwOw0T0YjsUY9QZT2OFmjiTjSiyxJMcte4Lx3ulEkYPIdUearVZARXBA+wl7Z/pfkZ1ifhkH82BvbLO3YuZLmWYFKhWez3o2OgLHvZn6kCShVsR41F/+dPFFp7UhGmA3tiDn2mFHrZyp3RzeccVgUXFxb1ZVDSzE/Jf50PaGOs7YXRXRgFeTQAIo7j07rpJdI4LZusVA86yfEHI1DYfiiwNfPulsb/Jmjhhd22Ys458QK8pNizjlBc5MnS2Gha095tl1l6r0xFHGpjc3r7c2Nxf7MbL3bhKABZWeNfiF1P/1yGX05DxrnHptwDD1rf/YlWUsP7TwUX6+XRtXp7/65NJKpohAZCOTcPoVHHZwa3/Metn/oi1BRr9FSghg1GV1KIl90uVWCMMICzYxRWHa2vJzNghFFnznCpK7MEddPXHvF/LqbRcBXsYiJC53NDe4Ut+Btc44y6ByL5e5mieN/judHsuH2iJtMmB3wcq1BGNqF+JZJOzWakJqfrLmOUHuaUW10fOxVMwwI4L7G+oK0jzjBAwAucB8NISr3WubhIkQ8vdP+x2pLoPMGvtQD0hFDijtyDFrk6MZPgtEYhLcSCo92fS0qmeKYsFbrXGRvZVxL0dvWyOYeM4+TPvKNvAEFWX6+dqooQj+I+mZPgivYC8o72izuIiEvAtC6gOU9A4E3rsAyHzM857pLMFSXcv4syBiXmh+tZh3JoEMtcJsfXr8r2CON+QHfIq4p4yxlHp5a/wsoMyC1Z2wnWzzTvvnLWBuFYAAywE+dfoPg1p1RHAVwp6K5DAjU8KKp8/cvdnCu9C/q3bGnsHUHWjLSSaN+Sae+urjwXkcMxX2fLFxHvmriteqoxcYLx3109PHnTyEfBkoNVD5QyIMajzc/Wc07mvagNzRYqawcp+YYxWF3UVsJi4q++ufyOE3n9kereXjLnhJmLub/ypyPV1k1VSWcMvZ5RhxG/31/adg8rsR+We8O4Q0vXY8Kyl+tax4rPgqvAyDjIgTP3FWobzL/+WYAyWYe3q9CuJxKdjBrz1GBNX+UO3XpmJWph/drdBHi4tgZ8ZwjHGcEYdMCDWuOd+H1SttPS62JlRQLDOH2OV0SxeVCf/fhIjQNZcT3pgCQ1O0i7IpZ9O4WkDeyHKJYwoLFFn4SzCLlljp/+3wevQp0sHUrlUrVxSiP4jAmEdZ8sdj+cNUdOsfWSdiB05KtUUW+/ddVrsnqmktOroc19z7tSesTKykW2JtAWeMSag/OR6QSdOGQ2s2vZrVEp0FItFuM2z7quPZB/F3cwNjQAAUc3yffbzkymUM+AEBBDiXCTxW4rd056pj2hzdZj02s253634Ny/z6w/oa0DQyThxfke2e3ySdM4Iy1YBiHnP/aSzdrGM5hdAGrFuC+dmYE+JpA9OWJlQSBcZcAV+eN56DzNw1bRJkJPmloUstoweWjwgSeIOsoalEy0I+K9H6mWmmcWVLlXzNf4P+Awh19C3gsejXW1zL8vQdzBpSUqT6oYc374J9j+TghxuZQCwXGaEE2Mnvf1vhueu/bOXhqDhE2HfdAQwjoQ67pRqbqTR7u4k/tgaJLUVIvH4Xo8cIERbAwuXPQGqKQcymaW41+llhxkaW3XrNmLJr673CAEdNESmK0hU8N6T7Q8KtTr32lzeEk6y+imMvkNQ5JmoSUyvEFye3SQIPNR2Q/WVxeeP2d0ERKsvmIbAFxifkobD+d/ZzxLtBESkLLw4acS7VqICnb+fa8d86TfgYRTcpx50qwhgAAAABJRU5ErkJggg==" alt="logo" /></a>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div>
+        <ul class="d-flex list-unstyled">
+          <li class="py-12 text-gray1"><a href="#">服務條款</a></li>
+          <li class="py-12 text-gray1 ms-72"><a href="#">隱私權政策</a></li>
+          <li class="py-12 text-gray1 ms-72"><a href="#">交友安全聲明</a></li>
+        </ul>
+      </div>
+      <div class="d-flex">
+        <a href="#">
+          <img
+            src="/i_pay/assets/app_store-f12260a2.png"
+            alt="appleStore"
+            width="127"
+            height="45"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="/i_pay/assets/google_play-065c807e.png"
+            alt="googlePlay"
+            width="127"
+            height="45"
+            class="ms-24"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="container-fluid bg-secondaryDark">
+  <h6 class="text-center text-gray6 py-16 fs-12">CopyRight by i-pay company</h6>
+</div>
+  </body>
+
+  <script src="../assets/js/js.js"></script>
+  
+</html>
