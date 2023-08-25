@@ -7,7 +7,7 @@
 
 // scss-docs-start gray-color-variables
 $white: #fff !default;
-$gray-100: #f9f7f9 !default;
+$gray-100: #E8E8E8 !default;
 $gray-200: #f1f1f1 !default;
 $gray-300: #d7d7dc !default;
 $gray-400: #94949f !default;
@@ -341,12 +341,12 @@ $theme-colors: (
   "orange": $orange,
   "blueLight": $blueLight,
   "skin": $skin,
-  "grayLighter": $gray-100,
-  "grayLight": $gray-200,
-  "gray": $gray-300,
-  "grayDark": $gray-400,
-  "grayDarker": $gray-500,
-  "grayDarkest": $gray-600,
+  "gray6": $gray-100,
+  "gray5": $gray-200,
+  "gray4": $gray-300,
+  "gray3": $gray-400,
+  "gray2": $gray-500,
+  "gray1": $gray-600,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -409,7 +409,7 @@ $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
 $enable-rfs: true !default;
 $enable-validation-icons: true !default;
-$enable-negative-margins: false !default;
+$enable-negative-margins: true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
@@ -450,26 +450,44 @@ $gradient: linear-gradient(
 //   5: $spacer * 3,
 // ) !default;
 
-// a=1, b=2, c=3, d=4, e=5, f=6, g=7, h=8, i=9, j=10, k=11, l=12, m=13, n=14, o=15, p=16, q=17, r=18, s=19, t=20, u=21, v=22, w=23, x=24, y=25, z=26
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
   4: $spacer * 0.25,
+  5: $spacer * 0.3125,
+  6: $spacer * 0.375,
+  7: $spacer * 0.4375,
   8: $spacer * 0.5,
-  A2: $spacer * 0.75,
-  A6: $spacer,
-  A8: $spacer * 1.125,
-  B0: $spacer * 1.25,
-  B4: $spacer * 1.5,
-  C2: $spacer * 2,
-  D0: $spacer * 2.5,
-  D8: $spacer * 3,
-  F4: $spacer * 3.375,
-  G2: $spacer * 4.5,
-  I6: $spacer * 6,
-  AB0: $spacer * 7.5,
-  AB4: $spacer * 7.75,
-  AD0: $spacer * 8.75,
+  10: $spacer * 0.625,
+  12: $spacer * 0.75,
+  14: $spacer * 0.875,
+  15: $spacer * 0.9375,
+  16: $spacer,
+  18: $spacer * 1.125,
+  20: $spacer * 1.25,
+  24: $spacer * 1.5,
+  28: $spacer * 1.75,
+  32: $spacer * 2,
+  40: $spacer * 2.5,
+  48: $spacer * 3,
+  55: $spacer * 3.4375,
+  56: $spacer * 3.5,
+  64: $spacer * 4,
+  72: $spacer * 4.5,
+  75: $spacer * 4.6875,
+  96: $spacer * 6,
+  100: $spacer * 6.25,
+  110: $spacer * 6.875,
+  120: $spacer * 7.5,
+  124: $spacer * 7.75,
+  140: $spacer * 8.75,
+  200: $spacer * 12.5,
+  220: $spacer * 13.75,
+  240: $spacer * 15,
+  250: $spacer * 15.625,
+  480: $spacer * 30,
+  600: $spacer * 37.5,
+  800:$spacer * 50
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -505,8 +523,8 @@ $body-emphasis-color: $black !default;
 //
 // Style anchor elements.
 
-$link-color: $main !default;
-$link-decoration: underline !default;
+$link-color: $gray-600 !default;
+$link-decoration: none !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
@@ -706,35 +724,16 @@ $h6-font-size: $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  D8: $font-size-base * 3,
-  D0: $font-size-base * 2.5,
-  C2: $font-size-base * 2,
-  B8: $font-size-base * 1.75,
-  B4: $font-size-base * 1.5,
-  B0: $font-size-base * 1.25,
-  A6: $font-size-base,
-  A4: $font-size-base * 0.875,
-  A2: $font-size-base * 0.75,
+  48: $font-size-base * 3,
+  40: $font-size-base * 2.5,
+  32: $font-size-base * 2,
+  28: $font-size-base * 1.75,
+  24: $font-size-base * 1.5,
+  20: $font-size-base * 1.25,
+  16: $font-size-base,
+  14: $font-size-base * 0.875,
+  12: $font-size-base * 0.75,
 ) !default;
-
-// 0: 0,                 <!-- 間距0 -->
-// 4: $spacer * 0.25,    <!-- 間距4 -->
-// 8: $spacer * 0.5,     <!-- 間距8 -->
-// A2: $spacer * 0.75,   <!-- 間距12 -->
-// A6: $spacer,          <!-- 間距16 -->
-// A8: $spacer * 1.125,  <!-- 間距18 -->
-// B0: $spacer * 1.25,   <!-- 間距20 -->
-// B4: $spacer * 1.5,    <!-- 間距24 -->
-// C2: $spacer * 2,      <!-- 間距32 -->
-// D0: $spacer * 2.5,    <!-- 間距40 -->
-// D8: $spacer * 3,      <!-- 間距48 -->
-// F4: $spacer * 3.375,  <!-- 間距64 -->
-// G2: $spacer * 4.5,    <!-- 間距72 -->
-// I6: $spacer * 6,      <!-- 間距96 -->
-// AB0: $spacer * 7.5,   <!-- 間距120 -->
-// AB4: $spacer * 7.75,  <!-- 間距124 -->
-// AD0: $spacer * 8.75,  <!-- 間距140 -->
-// scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
 $headings-margin-bottom: $spacer * 0.5 !default;
@@ -1490,8 +1489,8 @@ $card-title-spacer-y: $spacer * 0.5 !default;
 $card-title-color: null !default;
 $card-subtitle-color: null !default;
 $card-border-width: var(--#{$prefix}border-width) !default;
-$card-border-color: var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius: var(--#{$prefix}border-radius) !default;
+$card-border-radius: var(--bs-card-border-radius) !default;
 $card-box-shadow: null !default;
 $card-inner-border-radius: subtract(
   $card-border-radius,

@@ -1,64 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link rel="stylesheet" href="../assets/scss/all.scss">
+    <link rel="stylesheet" href="../assets/scss/all.scss" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css" />
   </head>
   <body>
-    <!-- 這裡會 include layout下的 ejs檔案，然後再寫本頁獨有的內容 -->
-    <%- include('./layout/header'); -%>
-
-    <div class="btn btn-main w-50 hover" >Hover</div>
-    <div class="btn btn-main hover" >Main Hover</div>
-    <div class="btn btn-mainLight" >aaa</div>
-    <div class="btn btn-mainTransparent" >aaa</div>
-    <div class="btn btn-secondary" >aaa</div>
-    <div class="btn btn-secondaryDark" >aaa</div>
-    <div class="btn btn-secondaryLight" >aaa</div>
-    <div class="btn btn-orange" >orange</div>
-    <div class="btn btn-blueSky" >blueSky</div>
-    <div class="btn btn-skin" >skin</div>
-    <div class="btn btn-grayLighter" >skin</div>
-    <div class="btn btn-grayLight" >skin</div>
-    <div class="btn btn-gray" >skin</div>
-    <div class="btn btn-grayDark" >skin</div>
-    <div class="btn btn-grayDarker" >skin</div>
-    <div class="btn btn-grayDarkest" >skin</div>
-    <div class="fs-1 hover">skin Hover</div>
-    <div class="fs-D8 border border-orange" >D8</div>
-    <div class="fs-B0 bg-blueLight" >B0</div>
-    <div class="fs-3 border bg-orange border-3 rounded-5 border-main" style="width:40px;height:40px">skin</div>
-    <div class="fs-4" >skin</div>
-    <div class="fs-5" >skin</div>
-    <div class="fs-6" >skin</div>
-    <div class="fs-7" >skin</div>
-    <div class="fs-8" >skin</div>
-    <div class="fs-9 fw-md" >fw-md</div>
-    <div class="fs-md-5" style="font-weight: 700;">skin</div>
-    <div class="fs-bold-1">skin</div>
-    <div class="badge bg-main mt-A">aa</div>
-    <%- include('./layout/footer'); -%>
- 
-    <!-- D8: $font-size-base * 3,
-    D0: $font-size-base * 2.5,
-    C2: $font-size-base * 2,
-    B8: $font-size-base * 1.75,
-    B4: $font-size-base * 1.5,
-    B0: $font-size-base * 1.25,
-    A6: $font-size-base,
-    A4: $font-size-base * 0.875,
-    A2: $font-size-base * 0.75, -->
-    <div class="border border-3 p-0 w-25">sss</div>
-    <div class="border border-3 p-4 w-25">sss</div>
-    <div class="border border-3 p-8 w-25">sss</div>
-    <div class="border border-3 p-A2 w-25">sss</div>
-    <div class="border border-3 p-A6 w-25">sss</div>
-    <div class="border border-3 p-A8 w-25">sss</div>
-    <div class="border border-3 pt-B0 w-25">sss</div>
-
-    <script type="module" src="../main.js"></script>
+    <%- include('./layout/nav') -%>
+    <div class="container-fluid"></div>
+    <%- include('./layout/banner') -%>
+    <%- include('./layout/main') -%>
+    <%- include('./layout/comment') -%>
+    
+    <%- include('./layout/hire') -%>
+    <%- include('./layout/playComment') -%>
+    <%- include('./layout/footer') -%>
   </body>
+
+  <script src="../assets/js/js.js"></script>
+  <script type="module" src="../main.js"></script>
 </html>

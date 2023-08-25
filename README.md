@@ -45,46 +45,43 @@ chevron_right
 favorite_border
 </span>
 
-# 10 sms  <!-- 第10號找不到，先用這個擋一下 -->
-<span class="material-icons-outlined">
-sms
+# 10 chat   <!-- 第10號找不到，先用這個擋一下 -->
+<span class="material-icons p-4 icons"> chat 
 </span>
-
-
 # spacing
-## 這裡使用0=0, a=1, b=2, c=3, d=4, e=5, f=6, g=7, h=8, i=9 作為變數名稱
-## 個位數使用限制為數字0-9，十位與百位數則使用英文大寫。
-
   0: 0,                 <!-- 間距0 -->
   4: $spacer * 0.25,    <!-- 間距4 -->
+  6: $spacer * 0.375,   <!-- 間距6 -->
   8: $spacer * 0.5,     <!-- 間距8 -->
-  A2: $spacer * 0.75,   <!-- 間距12 -->
-  A6: $spacer,          <!-- 間距16 -->
-  A8: $spacer * 1.125,  <!-- 間距18 -->
-  B0: $spacer * 1.25,   <!-- 間距20 -->
-  B4: $spacer * 1.5,    <!-- 間距24 -->
-  C2: $spacer * 2,      <!-- 間距32 -->
-  D0: $spacer * 2.5,    <!-- 間距40 -->
-  D8: $spacer * 3,      <!-- 間距48 -->
-  F4: $spacer * 3.375,  <!-- 間距64 -->
-  G2: $spacer * 4.5,    <!-- 間距72 -->
-  I6: $spacer * 6,      <!-- 間距96 -->
-  AB0: $spacer * 7.5,   <!-- 間距120 -->
-  AB4: $spacer * 7.75,  <!-- 間距124 -->
-  AD0: $spacer * 8.75,  <!-- 間距140 -->
-
+  10: $spacer * 0.625,  <!-- 間距10 -->
+  12: $spacer * 0.75,   <!-- 間距12 -->
+  14: $spacer * 0.875,  <!-- 間距14 -->
+  16: $spacer,          <!-- 間距16 -->
+  18: $spacer * 1.125,  <!-- 間距18 -->
+  20: $spacer * 1.25,   <!-- 間距20 -->
+  24: $spacer * 1.5,    <!-- 間距24 -->
+  32: $spacer * 2,      <!-- 間距32 -->
+  40: $spacer * 2.5,    <!-- 間距40 -->
+  48: $spacer * 3,      <!-- 間距48 -->
+  64: $spacer * 3.375,  <!-- 間距64 -->
+  72: $spacer * 4.5,    <!-- 間距72 -->
+  96: $spacer * 6,      <!-- 間距96 -->
+  120: $spacer * 7.5,   <!-- 間距120 -->
+  124: $spacer * 7.75,  <!-- 間距124 -->
+  140: $spacer * 8.75,  <!-- 間距140 -->
+  220: $spacer * 13.75, <!-- 間距220 -->
+  240: $spacer * 15,    <!-- 間距240 -->
 
 # font-sizing
-## 同spacing邏輯
-  D8: $font-size-base * 3,     <!-- 間距48 -->
-  D0: $font-size-base * 2.5,   <!-- 間距40 -->
-  C2: $font-size-base * 2,     <!-- 間距32 -->
-  B8: $font-size-base * 1.75,  <!-- 間距28 -->
-  B4: $font-size-base * 1.5,   <!-- 間距24 -->
-  B0: $font-size-base * 1.25,  <!-- 間距20 -->
-  A6: $font-size-base,         <!-- 間距16 -->
-  A4: $font-size-base * 0.875, <!-- 間距14 -->
-  A2: $font-size-base * 0.75,  <!-- 間距12 -->
+  48: $font-size-base * 3,     <!-- 間距48 -->
+  40: $font-size-base * 2.5,   <!-- 間距40 -->
+  32: $font-size-base * 2,     <!-- 間距32 -->
+  28: $font-size-base * 1.75,  <!-- 間距28 -->
+  24: $font-size-base * 1.5,   <!-- 間距24 -->
+  20: $font-size-base * 1.25,  <!-- 間距20 -->
+  16: $font-size-base,         <!-- 間距16 -->
+  14: $font-size-base * 0.875, <!-- 間距14 -->
+  12: $font-size-base * 0.75,  <!-- 間距12 -->
 
 # color
 ## 以main取代primary文字
@@ -103,12 +100,14 @@ sms
   配色膚色：skin
   配色藍：blueLight
 
-  灰淺+：grayLighter
-  灰淺：grayLight
-  灰：gray
-  灰深：grayDark
-  灰深+：grayDarker
-  灰深++：grayDarkest
+  灰：深到淺 → 1 ~ 6
+  gray1
+  gray2
+  gray3
+  gray4
+  gray5
+  gray6
+  
  
   Example:
   bg-mainDark , text-grayDark, border-orange
