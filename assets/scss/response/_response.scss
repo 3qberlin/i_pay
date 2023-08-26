@@ -157,7 +157,7 @@
     right: 6px;
   }
   .comment ul li {
-    min-width: 100%;
+    min-width: 80%;
     padding: 20px 16px !important;
   }
   .comment ul {
@@ -234,16 +234,25 @@
     height: 1286px !important;
   }
   .hire ul li {
-    width: 40% !important;
+    width: 34% !important;
+    // height: 34% !important;
+    // margin-bottom:;
   }
   .hire ul li img {
     width: 100% !important;
   }
 }
 
+@media (max-width: 1200px) {
+
+  .hire ul li {
+    width: 40% !important;
+  }
+}
+
 @media (max-width: 992px) {
   .hire ul li {
-    width: 49% !important;
+    width: 48% !important;
   }
 }
 
@@ -260,14 +269,27 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 580px) {
   .hire ul li {
-    width: 70% !important;
+    width: 59% !important;
   }
 }
 
+
 @media (max-width: 500px) {
   .hire ul li {
-    width: 80% !important;
+    width: 66% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .hire ul li {
+    width: 73% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .hire ul li {
+    width: 83% !important;
   }
 }
