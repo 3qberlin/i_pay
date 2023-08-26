@@ -32,3 +32,10 @@ padding-left:12px;
     left:24px;
 }
 
+.mainContent .card, .overflowX .card{
+    margin: 12px 0px 12px 0px!important;;
+}
+
+.mainContent .card:first-child, .overflowX .card:first-child{
+    margin-left: 12px !important;
+}
