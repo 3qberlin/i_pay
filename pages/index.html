@@ -20,9 +20,32 @@
     <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css" />
   </head>
   <body>
-    <%- include('./layout/nav') -%>
-    <%- include('./layout/banner') -%>
-    <main class="mainBackground pt-120">
+    <%- include('./layout/nav') -%> <%- include('./layout/banner') -%>
+    <div
+      class="pt-lg-120 d-none d-lg-block"
+      style="
+        background-image: url(&quot;../assets/images/web/background/01.png&quot;);
+        height: 360px;
+      "
+    >
+      <section class="d-flex align-items-center flex-column">
+        <h2 class="fs-48 fw-bold">開始約會</h2>
+        <div class="mt-24 text-gray2 position-relative">
+          <a href="#" class="d-flex align-items-center"
+            >看更多<span class="material-icons text-gray2">
+              arrow_right
+            </span></a
+          >
+          <div class="datingStart d-none d-lg-block"></div>
+        </div>
+      </section>
+    </div>
+    <div class="pt-120 d-block d-lg-none" style="background-image: url('../assets/images/mobile/background/01.png');height:634px;">
+      <section class="d-flex align-items-center flex-column pt-64">
+        <h2 class="fs-md-48 fw-bold fs-24">開始約會</h2>
+      </section>
+    </div>
+    <!-- <main class="mainBackground pt-120">
       <section class="d-flex align-items-center flex-column ">
         <h2 class="fs-48 fw-bold">開始約會</h2>
         <div class="mt-24 text-gray2 position-relative">
@@ -32,17 +55,16 @@
           <div class="datingStart d-none d-lg-block"></div>
         </div>
       </section>
-    </main>
-    <main class="mainBackgroundMob d-lg-none mt-md-72">
+    </main> -->
+
+    <!-- <main class="mainBackgroundMob d-lg-none mt-md-72">
       <section class="d-flex align-items-center flex-column pt-64">
         <h2 class="fs-md-48 fw-bold fs-24">開始約會</h2>
       </section>
-    </main>
-    <%- include('./layout/main') -%>
-    <%- include('./layout/comment') -%>
-    <%- include('./layout/hire') -%>
-    <%- include('./layout/playComment') -%>
-    <%- include('./layout/footer') -%>
+    </main> -->
+    <%- include('./layout/main') -%> <%- include('./layout/comment') -%> <%-
+    include('./layout/hire') -%> <%- include('./layout/playComment') -%> <%-
+    include('./layout/footer') -%>
   </body>
 
   <script src="../assets/js/js.js"></script>
