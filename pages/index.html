@@ -22,6 +22,22 @@
   <body>
     <%- include('./layout/nav') -%>
     <%- include('./layout/banner') -%>
+    <main class="mainBackground pt-120">
+      <section class="d-flex align-items-center flex-column ">
+        <h2 class="fs-48 fw-bold">開始約會</h2>
+        <div class="mt-24 text-gray2 position-relative">
+          <a href="#" class="d-flex align-items-center"
+            >看更多<span class="material-icons text-gray2"> arrow_right </span></a
+          >
+          <div class="datingStart d-none d-lg-block"></div>
+        </div>
+      </section>
+    </main>
+    <main class="mainBackgroundMob d-lg-none mt-md-72">
+      <section class="d-flex align-items-center flex-column pt-64">
+        <h2 class="fs-md-48 fw-bold fs-24">開始約會</h2>
+      </section>
+    </main>
     <%- include('./layout/main') -%>
     <%- include('./layout/comment') -%>
     <%- include('./layout/hire') -%>
