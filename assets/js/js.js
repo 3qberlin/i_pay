@@ -29,3 +29,15 @@ $(document).ready(function () {
     ).addClass("btn-carouselMobActive");
   });
 });
+
+var menuOpen = true;
+
+function btnMenu() {
+  var iconSpan = $(".material-icons");
+  if (menuOpen) {
+    iconSpan.html("close");
+  } else {
+    iconSpan.html("menu");
+  }
+  menuOpen = !menuOpen;
+}
