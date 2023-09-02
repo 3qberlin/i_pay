@@ -20,6 +20,9 @@
   .mainContent {
     display: flex !important;
   }
+  .position-adjust {
+    top: 0;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -118,7 +121,7 @@
   .overflowX ul li {
     min-width: 80% !important;
     min-height: 100% !important;
-    margin: auto!important;
+    margin: auto !important;
   }
   .mainContent {
     display: none !important;
@@ -244,7 +247,6 @@
 }
 
 @media (max-width: 1200px) {
-
   .hire ul li {
     width: 40% !important;
   }
@@ -267,9 +269,9 @@
   .hire ul li {
     width: 60% !important;
   }
-  .fixedIcon a{
-    margin-right:16px !important;
-    margin-bottom:13px !important;
+  .fixedIcon a {
+    margin-right: 16px !important;
+    margin-bottom: 13px !important;
   }
 }
 
@@ -278,7 +280,6 @@
     width: 59% !important;
   }
 }
-
 
 @media (max-width: 500px) {
   .hire ul li {
