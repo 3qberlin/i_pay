@@ -298,3 +298,14 @@
     width: 83% !important;
   }
 }
+
+@media (max-width:1450px){
+  .commentLeft{
+    left:0px;
+    display:none;
+  }
+  .commentRight{
+    right:0px;
+    display:none;
+  }
+}
